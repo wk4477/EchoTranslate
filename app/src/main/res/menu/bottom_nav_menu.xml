@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btm_txt"
+        android:icon="@drawable/translate_text_icon"
+        android:title="Text"/>
+
+    <item
+        android:id="@+id/btm_camera"
+        android:icon="@drawable/photo_camera_icon"
+        android:title="Camera"/>
+    <item
+        android:id="@+id/btm_voice"
+        android:icon="@drawable/voice_icon"
+        android:title="Voice"/>
+    <item
+        android:id="@+id/btm_phrase"
+        android:icon="@drawable/phrase_book_icon"
+        android:title="Phrasebook"/>
+</menu>

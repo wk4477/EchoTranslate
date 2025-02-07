@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.ui.fragment.VoiceFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/material_toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/echotranslator"
+                style="@style/splash_top_heading"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/toolbar_icon_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/settings_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/voice_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/voice_translate_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/material_toolbar1" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/voice_conversation_icon"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="visible"
+        android:src="@drawable/voice_conversation_empty_ic"
+        android:contentDescription="@string/image" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt2"
+        style="@style/voice_empty_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/tap_on_mic_to_start_conversation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voice_conversation_icon" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_empty_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="txt2,voice_conversation_icon"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/voice_translate_1"
+        android:layout_width="@dimen/_33sdp"
+        android:layout_height="@dimen/_33sdp"
+        app:layout_constraintStart_toStartOf="@+id/voice_one"
+        app:layout_constraintEnd_toEndOf="@+id/voice_one"
+        app:layout_constraintBottom_toTopOf="@+id/voice_one"
+        android:visibility="visible"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:src="@drawable/voice_translate_ic"
+        android:contentDescription="@string/image" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/voice_one"
+        android:layout_width="@dimen/_102sdp"
+        android:layout_height="@dimen/_43sdp"
+        android:background="@drawable/voice_background"
+        android:layout_marginStart="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_15sdp"
+        >
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/swap_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/swap_lang_icon"
+        app:layout_constraintEnd_toStartOf="@+id/voice_two"
+        app:layout_constraintStart_toEndOf="@+id/voice_one"
+        app:layout_constraintTop_toTopOf="@+id/voice_one"
+        app:layout_constraintBottom_toBottomOf="@+id/voice_one" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/voice_translate_2"
+        android:layout_width="@dimen/_33sdp"
+        android:layout_height="@dimen/_33sdp"
+        app:layout_constraintStart_toStartOf="@+id/voice_two"
+        app:layout_constraintEnd_toEndOf="@+id/voice_two"
+        app:layout_constraintBottom_toTopOf="@+id/voice_two"
+        android:visibility="visible"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:src="@drawable/voice_translate_ic"
+        android:contentDescription="@string/image" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/voice_two"
+        android:layout_width="@dimen/_102sdp"
+        android:layout_height="@dimen/_43sdp"
+        android:background="@drawable/voice_background"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_15sdp"
+        >
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

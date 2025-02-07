@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -45,4 +49,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation (libs.sdp.android) // For scalable dp
+    implementation (libs.ssp.android) // For scalable sp
+    // CameraX
+    implementation (libs.androidx.camera.core)
+    implementation (libs.androidx.camera.view)
+
+    // ML Kit Text Recognition
+    implementation (libs.text.recognition)
+
 }

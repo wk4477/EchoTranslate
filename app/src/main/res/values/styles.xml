@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="bottomNavigationView">
+        <item name="itemIconSize">@dimen/_11ssp</item>
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="TextAppearance.Material3.SearchView">
+
+    </style>
+
+</resources>

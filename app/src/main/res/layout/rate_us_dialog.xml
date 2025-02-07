@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rate_us_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/rateus_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/do_you_like_our_app"
+        style="@style/ratUs_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/rateus_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/give_us_a_quick_rating_so_we_know_if_you_like"
+        style="@style/voice_empty_heading"
+        android:maxLines="2"
+        app:layout_constraintStart_toStartOf="@+id/rateus_title"
+        app:layout_constraintTop_toBottomOf="@+id/rateus_title"
+        />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginHorizontal="@dimen/_22sdp"
+        android:numStars="5"
+        android:stepSize="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/rateus_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:progressTint="#FFB800"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cancel_rateus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_marginTop="@dimen/_28sdp"
+        style="@style/rateus_txt"
+        android:layout_marginBottom="@dimen/_22sdp"
+        android:layout_marginEnd="@dimen/_38sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rateus_txt"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/rateus_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rate_now"
+        android:layout_marginTop="@dimen/_28sdp"
+        style="@style/rateus_txt"
+        android:layout_marginBottom="@dimen/_22sdp"
+        android:layout_marginEnd="@dimen/_38sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

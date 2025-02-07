@@ -1,3 +1,42 @@
 <resources>
     <string name="app_name">EchoTranslate</string>
+    <string name="echotranslator">EchoTranslator</string>
+    <string name="get_started">Get Started</string>
+    <string name="start_typing">Start typing...</string>
+    <string name="translate">Translate</string>
+    <string name="clear">Clear</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_language">Select Language</string>
+    <string name="done">Done</string>
+    <string name="search_language">Search language</string>
+    <string name="image">image</string>
+    <string name="english">English</string>
+    <string name="setting">Setting</string>
+    <string name="translate_pro">Translate Pro</string>
+    <string name="language">Language</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share">Share</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="app_version">App Version</string>
+    <string name="_1_0">1.0</string>
+    <string name="phrasebook">Phrasebook</string>
+    <string name="tap_on_mic_to_start_conversation">Tap on mic to start conversation!</string>
+    <string name="search">search</string>
+    <string name="do_you_like_our_app">Do you like our app?</string>
+    <string name="give_us_a_quick_rating_so_we_know_if_you_like">Give us a quick rating so we know\n if you like</string>
+    <string name="rate_now">RATE NOW</string>
+    <string name="cancel">CANCEL</string>
+    <string name="voice_translator">Voice Translator</string>
+    <string name="seamless_conversations_anytime_anywhere">Seamless Conversations,\nAnytime, Anywhere</string>
+    <string name="next">Next</string>
+    <string name="get_full_access">Get Full Access</string>
+    <string name="translator_pro">Translator Pro</string>
+    <string name="subscribe_to_our_best_premium_plan_to_get_access_to_all_features_and_with_ad_free_experience">Subscribe to our best premium plan to get access to all features and with ad-free experience</string>
+    <string name="most_recommended">Most Recommended</string>
+    <string name="rs_5000_00">RS 5000.00</string>
+    <string name="yearly">Yearly</string>
+    <string name="_1_month">1 Month</string>
+    <string name="continues">CONTINUE</string>
+    <string name="you_can_cancel_subscription_anytime_24_hrs_before_renewal_auto_renewal">You can cancel subscription \nanytime, 24 hrs before renewal - Auto Renewal</string>
 </resources>

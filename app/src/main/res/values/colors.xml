@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="black_title">#1C1B1F</color>
+    <color name="btm_bg_color">#EFF4F7</color>
+    <color name="txt_color">#252525</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="blue_color">#006B7B</color>
+    <color name="card_color">#F4F4F4</color>
+    <color name="item_txt_clr">#606467</color>
+    <color name="edt_bg_clr">#F2F2F2</color>
+    <color name="contr_bg_color">#EDF9FC</color>
+    <color name="premium_bg_color">#F4832C</color>
+    <color name="stroke_color">#DCDCDC</color>
+    <color name="grad1">#F2B221</color>
+    <color name="grad2">#F57C2D</color>
+    <color name="setting_txt_color">#252525</color>
+    <color name="voice_txt_color">#848484</color>
+    <color name="lang_txt_color">#A7A7A7</color>
 </resources>

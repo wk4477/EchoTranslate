@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="splash_top_heading" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/txt_color</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+    </style>
+
+    <style name="rateus_txt" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/txt_color</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+    </style>
+
+    <style name="top_onboard_txt" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:layout_marginTop">@dimen/_30sdp</item>
+        <item name="android:textColor">@color/txt_color</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+    </style>
+
+    <style name="voice_empty_heading" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/txt_color</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+    </style>
+
+    <style name="language_title" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="maxLines">1</item>
+        <item name="singleLine">true</item>
+        <item name="android:textColor">@color/lang_txt_color</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+    </style>
+
+    <style name="onboardSub_title" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="maxLines">2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/lang_txt_color</item>
+    </style>
+
+    <style name="voice_text" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:textColor">@color/lang_txt_color</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+    </style>
+
+    <style name="ratUs_title" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:layout_marginTop">@dimen/_21sdp</item>
+        <item name="android:layout_marginStart">@dimen/_21sdp</item>
+        <item name="android:textColor">@color/black_title</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+    </style>
+
+
+    <style name="clear_txt" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/_9ssp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/blue_color</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+    </style>
+
+    <style name="splash_start_btn" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="backgroundTint">@color/blue_color</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="onBoard_btn" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/_47sdp</item>
+        <item name="backgroundTint">@color/blue_color</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="translate_btn" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/_9ssp</item>
+        <item name="android:radius">@dimen/_9sdp</item>
+        <item name="backgroundTint">@color/blue_color</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

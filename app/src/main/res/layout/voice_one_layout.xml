@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_12sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/voice_one_bg">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/language_title"
+        style="@style/language_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/english"
+        android:layout_marginStart="@dimen/_9sdp"
+        app:layout_goneMarginTop="@dimen/_6sdp"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/clear"
+        style="@style/clear_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/clear"
+        android:layout_marginEnd="@dimen/_9sdp"
+        app:layout_goneMarginTop="@dimen/_6sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/voice_text"
+        style="@style/voice_empty_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_9sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:ellipsize="marquee"
+        android:gravity="start"
+        android:maxLines="3"
+        android:layout_marginEnd="@dimen/_9sdp"
+        android:text="aaaaaaaaaaaaaaa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language_title"
+        app:layout_goneMarginTop="@dimen/_6sdp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

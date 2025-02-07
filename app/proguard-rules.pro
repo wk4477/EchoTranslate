@@ -12,6 +12,10 @@
 #   public *;
 #}
 
+-keep class com.google.android.material.** { *; }
+-keep class androidx.** { *; }
+
+
 # Uncomment this to preserve the line number information for
 # debugging stack traces.
 #-keepattributes SourceFile,LineNumberTable

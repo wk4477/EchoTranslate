@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".presentation.ui.mainactivity.MainActivity">
+    tools:context=".presentation.ui.fragment.">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/material_toolbar1"
@@ -199,21 +200,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_nav"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_50sdp"
-        android:theme="@style/bottomNavigationView"
-        app:menu="@menu/bottom_nav_menu"
-        android:background="@color/btm_bg_color"
-        app:itemPaddingTop="@dimen/_8sdp"
-        app:labelVisibilityMode="labeled"
-        app:itemIconTint="@color/item_icon_color"
-        app:itemTextColor="@color/item_txt_color"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

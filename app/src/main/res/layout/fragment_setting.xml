@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.ui.fragment.SettingFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/material_toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/toolbar_backpress_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/arrow_backpress_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/toolbar_title"
+                style="@style/splash_top_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:text="@string/setting"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/toolbar_backpress_btn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/premium_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/material_toolbar1"
+        tools:ignore="RtlHardcoded, spUsage">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/premium_icon"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="visible"
+            android:src="@drawable/premium_icon"
+            android:contentDescription="@string/image" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_11ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="0dp"
+            app:layout_constraintStart_toEndOf="@+id/premium_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/selection_img"
+            android:text="@string/translate_pro"
+            android:textColor="@color/setting_txt_color"
+            />
+
+        <ImageView
+            android:id="@+id/selection_img"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/image"
+            app:srcCompat="@drawable/forward_icon"
+            android:visibility="visible"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/language_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/premium_screen"
+        tools:ignore="RtlHardcoded, spUsage">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/language_icon"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="visible"
+            android:src="@drawable/languages_icon"
+            android:contentDescription="@string/image" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_11ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="0dp"
+            app:layout_constraintStart_toEndOf="@+id/language_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/language_img"
+            android:text="@string/language"
+            android:textColor="@color/setting_txt_color"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/language_img"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/image"
+            app:srcCompat="@drawable/forward_icon"
+            android:visibility="visible"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rateus_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language_screen"
+        tools:ignore="RtlHardcoded, spUsage">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/rateus_icon"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="visible"
+            android:src="@drawable/rate_us_icon"
+            android:contentDescription="@string/image" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_11ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="0dp"
+            app:layout_constraintStart_toEndOf="@+id/rateus_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rateus_img"
+            android:text="@string/rate_us"
+            android:textColor="@color/setting_txt_color"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/rateus_img"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/image"
+            app:srcCompat="@drawable/forward_icon"
+            android:visibility="visible"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/share_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateus_screen"
+        tools:ignore="RtlHardcoded, spUsage">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/share_icon"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="visible"
+            android:src="@drawable/share_app_icon"
+            android:contentDescription="@string/image" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_11ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="0dp"
+            app:layout_constraintStart_toEndOf="@+id/share_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/share"
+            android:textColor="@color/setting_txt_color"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/privacy_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/app_version_screen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/share_screen"
+        tools:ignore="RtlHardcoded, spUsage">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/privacy_icon"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="visible"
+            android:src="@drawable/privacy_icon"
+            android:contentDescription="@string/image" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_11ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="0dp"
+            app:layout_constraintStart_toEndOf="@+id/privacy_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/privacy_img"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/setting_txt_color"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/privacy_img"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/image"
+            app:srcCompat="@drawable/forward_icon"
+            android:visibility="visible"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/app_version_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privacy_screen"
+        tools:ignore="RtlHardcoded, spUsage">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/app_version_icon"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="visible"
+            android:src="@drawable/app_version_icon"
+            android:contentDescription="@string/image" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_11ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="0dp"
+            app:layout_constraintStart_toEndOf="@+id/app_version_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/app_version_img"
+            android:text="@string/app_version"
+            android:textColor="@color/setting_txt_color"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/app_version_img"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/_1_0"
+            android:textColor="@color/item_txt_clr"
+            android:textSize="@dimen/_11ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:visibility="visible"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
